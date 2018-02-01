@@ -8,16 +8,18 @@ export class Profile extends React.Component {
             teamCity,
             teamName,
             playerName,
+            playerId,
             height,
             weight,
             pts, reb, ast, pie,
-        } = this.props.playerInfo;
+        } = this.props.playerInfo; //const 加上我们main里传进来的prop
         return (
+
             <div className="profile">
                 <div className="profile-entry player-name">{`${playerName}`}</div>
                 <img
                     className="profile-pic"
-                    src={`${PROFILE_PIC_URL_PREFIX}/${this.props.playerId}.png`}
+                    src={`${PROFILE_PIC_URL_PREFIX}/${playerId}.png`}
                     alt="Profile"
                 />
                 <div className="profile-entry">
@@ -57,3 +59,4 @@ export class Profile extends React.Component {
         );
     }
 }
+
