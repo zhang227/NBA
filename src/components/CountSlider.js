@@ -7,15 +7,12 @@ export class CountSlider extends React.Component {
     }
     //when count onchange, rerender shotchart using LCA put function as a state
     onChange = (value) => {
-        // from dataview container
-        //because it is not relate to prev state
-        //so just send object
+        value = Number(value) || 2;
         this.setState({
             inputValue: value,
         });
-        this.props.onCountSliderChange(value)
+        this.props.onCountSliderChange(value);
     }
-    //offset to push left
     render() {
         return (
             <Row>

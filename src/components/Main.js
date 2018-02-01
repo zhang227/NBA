@@ -16,16 +16,15 @@ export class Main extends React.Component {
         this.loadPlayerInfo(name);
     }
 
-
     componentDidMount() {
         this.loadPlayerInfo('Stephen Curry');
     }
 
     loadPlayerInfo = (playerName) => {
-        const id = nba.findPlayer(playerName).playerId;
         //去state.nba.com拿info
+        const id = nba.findPlayer(playerName).playerId;
         nba.stats.playerInfo({ PlayerID: id }).then((info) => {
-            const playerInfo = Object.assign(info.commonPlayerInfo[0], info.playerHeadlineStats[0]);//把两个object merge起来
+            const playerInfo = Object.assign(info.commonPlayerInfo[0], info.playerHeadlineStats[0]);
             console.log(playerInfo);
             this.setState({
                 playerInfo: playerInfo

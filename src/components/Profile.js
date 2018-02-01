@@ -12,9 +12,8 @@ export class Profile extends React.Component {
             height,
             weight,
             pts, reb, ast, pie,
-        } = this.props.playerInfo; //const 加上我们main里传进来的prop
+        } = this.props.playerInfo;//const 加上我们main里传进来的prop
         return (
-
             <div className="profile">
                 <div className="profile-entry player-name">{`${playerName}`}</div>
                 <img
@@ -59,4 +58,5 @@ export class Profile extends React.Component {
         );
     }
 }
+
 

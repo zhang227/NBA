@@ -3,7 +3,7 @@
     background-color: #1D428A;
     display: flex;
     align-items: center;
-    margin-bottom: 70px;  //把box往后推一点
+    margin-bottom: 70px;
     box-shadow: -1px 0 5px 0 #1D428A;
 }
 
@@ -11,4 +11,3 @@
     height: 35px;
     padding-left: 40px;
 }
-

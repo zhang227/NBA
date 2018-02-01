@@ -1,3 +1,4 @@
+
 .profile {
     width: 200px;
     background: #ccc;
@@ -7,6 +8,7 @@
 
 .profile div {
     box-sizing: border-box;
+    font-size: 14px;
 }
 
 .profile-entry {
@@ -34,8 +36,9 @@
     width: 50%;
 }
 
-.player-name {
+.profile .player-name {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
 }
+
